@@ -46,7 +46,15 @@ public abstract class SaveCollection {
 	 */
 	public abstract String getName();
 	
+	/**
+	 * Determina si la salida incluye un file
+	 * @return
+	 */
 	public abstract boolean isFileOutput();
 	
+	/**
+	 * Path del file en caso de que la salida sea correcta
+	 * @return
+	 */
 	public abstract String FileOutput();
 }
