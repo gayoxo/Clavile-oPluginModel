@@ -25,7 +25,7 @@ public abstract class SaveCollection {
 	 * @param Salvar Clase a salvar.
 	 * @return resultado del salvado.
 	 */
-	public abstract CompleteCollectionLog processCollecccion(CompleteCollection Salvar) throws CompleteImportRuntimeException;
+	public abstract CompleteCollectionLog processCollecccion(CompleteCollection Salvar,String PathTemporalFiles) throws CompleteImportRuntimeException;
 	
 	
 	/**
@@ -46,5 +46,7 @@ public abstract class SaveCollection {
 	 */
 	public abstract String getName();
 	
-
+	public abstract boolean isFileOutput();
+	
+	public abstract String FileOutput();
 }
