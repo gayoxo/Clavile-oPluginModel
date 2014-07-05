@@ -18,7 +18,7 @@ public class CompleteCollection  implements Serializable{
 
 	private static final long serialVersionUID = 3540633522691779763L;
 	
-	private Long id;
+	private Long Clavilenoid;
 	
 	private String Name;
 	
@@ -39,19 +39,32 @@ public class CompleteCollection  implements Serializable{
 		MetamodelSchemas= new ArrayList<CompleteGrammar>();
 		SectionValues=new ArrayList<CompleteFile>();
 		Estructuras=new ArrayList<CompleteDocuments>();
-		id=null;
+		Clavilenoid=null;
 				
 	}
 
+	//TODO
+//	/**
+//	 * Constructor por defecto necesario para serializacion
+//	 */
+//	public CompleteCollection(String Namein,String description) {
+//		MetamodelSchemas= new ArrayList<CompleteGrammar>();
+//		SectionValues=new ArrayList<CompleteFile>();
+//		Estructuras=new ArrayList<CompleteDocuments>();
+//		Name=Namein;
+//		id=null;	
+//		Description=description;
+//	}
+	
 	/**
 	 * Constructor por defecto necesario para serializacion
 	 */
-	public CompleteCollection(String Namein,String description) {
+	public CompleteCollection(Long clavilenoid,String Namein,String description) {
 		MetamodelSchemas= new ArrayList<CompleteGrammar>();
 		SectionValues=new ArrayList<CompleteFile>();
 		Estructuras=new ArrayList<CompleteDocuments>();
 		Name=Namein;
-		id=null;	
+		Clavilenoid=clavilenoid;	
 		Description=description;
 	}
 	
@@ -98,19 +111,7 @@ public class CompleteCollection  implements Serializable{
 		Name = name;
 	}
 
-	/**
-	 * @return the id
-	 */
-	public Long getId() {
-		return id;
-	}
-
-	/**
-	 * @param id the id to set
-	 */
-	public void setId(Long id) {
-		this.id = id;
-	}
+	
 
 	/**
 	 * @return the estructuras
@@ -132,6 +133,20 @@ public class CompleteCollection  implements Serializable{
 
 	public void setDescription(String description) {
 		Description = description;
+	}
+
+	/**
+	 * @return the clavilenoid
+	 */
+	public Long getClavilenoid() {
+		return Clavilenoid;
+	}
+
+	/**
+	 * @param clavilenoid the clavilenoid to set
+	 */
+	public void setClavilenoid(Long clavilenoid) {
+		Clavilenoid = clavilenoid;
 	}
 	
 	

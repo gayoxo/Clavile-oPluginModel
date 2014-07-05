@@ -32,12 +32,32 @@ public class CompleteResourceElementFile extends CompleteResourceElement {
 		FilePath=null;
 	}
 
+	//TODO
+//	/**
+//	 * Constructor con parametros con el hasttype correspondiente.
+//	 * @param hastype tipo al que pertenece.
+//	 */
+//	public CompleteResourceElementFile(CompleteResourceElementType hastype) {
+//		super(hastype);
+//		FilePath=null;
+//	}
+//
+//	/**
+//	 * Constructor con todos los parametros.
+//	 * @param hastype Elemento al que pertenece.
+//	 * @param value valor de la referencia.
+//	 */
+//	public CompleteResourceElementFile(CompleteResourceElementType hastype, CompleteFile value) {
+//		super(hastype);
+//		FilePath = value;
+//	}
+	
 	/**
 	 * Constructor con parametros con el hasttype correspondiente.
 	 * @param hastype tipo al que pertenece.
 	 */
-	public CompleteResourceElementFile(CompleteResourceElementType hastype) {
-		super(hastype);
+	public CompleteResourceElementFile(Long clavileboId,CompleteResourceElementType hastype) {
+		super(clavileboId,hastype);
 		FilePath=null;
 	}
 
@@ -46,8 +66,8 @@ public class CompleteResourceElementFile extends CompleteResourceElement {
 	 * @param hastype Elemento al que pertenece.
 	 * @param value valor de la referencia.
 	 */
-	public CompleteResourceElementFile(CompleteResourceElementType hastype, CompleteFile value) {
-		super(hastype);
+	public CompleteResourceElementFile(Long clavileboId,CompleteResourceElementType hastype, CompleteFile value) {
+		super(clavileboId,hastype);
 		FilePath = value;
 	}
 

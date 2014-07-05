@@ -19,6 +19,7 @@ public class CompleteElement implements Serializable {
 
 	private CompleteDocuments DocumentsFather;
 	
+	private Long Clavilenoid;
 	private static final long serialVersionUID = 1L;
 	protected CompleteElementType hastype;
 	protected ArrayList<Integer> Ambitos;
@@ -30,18 +31,32 @@ public class CompleteElement implements Serializable {
 	public CompleteElement() {
 		Ambitos=new ArrayList<Integer>();
 		Shows=new ArrayList<CompleteOperationalValue>();
+		Clavilenoid=null;
 	}
 	
+//TODO
+//	/**
+//	 * Constructor con parametro de entrada de el nodo al que pertenece dentro del esquema.
+//	 * @param hastype
+//	 */
+//	public CompleteElement(CompleteElementType hastype) {
+//		this.hastype = hastype;
+//		Ambitos=new ArrayList<Integer>();
+//		Shows=new ArrayList<CompleteOperationalValue>();
+//		Clavilenoid=null;
+//	}
+
 	/**
 	 * Constructor con parametro de entrada de el nodo al que pertenece dentro del esquema.
 	 * @param hastype
 	 */
-	public CompleteElement(CompleteElementType hastype) {
+	public CompleteElement(Long clavilenoId,CompleteElementType hastype) {
 		this.hastype = hastype;
 		Ambitos=new ArrayList<Integer>();
 		Shows=new ArrayList<CompleteOperationalValue>();
+		Clavilenoid=null;
 	}
-
+	
 	/**
 	 * @return the hastype
 	 */
@@ -98,6 +113,20 @@ public class CompleteElement implements Serializable {
 	 */
 	public void setShows(ArrayList<CompleteOperationalValue> shows) {
 		Shows = shows;
+	}
+
+	/**
+	 * @return the clavilenoid
+	 */
+	public Long getClavilenoid() {
+		return Clavilenoid;
+	}
+
+	/**
+	 * @param clavilenoid the clavilenoid to set
+	 */
+	public void setClavilenoid(Long clavilenoid) {
+		Clavilenoid = clavilenoid;
 	}
 	
 	

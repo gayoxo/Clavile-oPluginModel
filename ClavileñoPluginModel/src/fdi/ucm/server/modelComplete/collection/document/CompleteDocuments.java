@@ -15,6 +15,7 @@ import fdi.ucm.server.modelComplete.collection.grammar.CompleteGrammar;
 public class CompleteDocuments implements Serializable{
 
 	private static final long serialVersionUID = 1L;
+	private Long Clavilenoid;
 	private CompleteCollection collectionFather;
 	private CompleteGrammar CompleteGrammar;
 	protected List<CompleteElement> Description;
@@ -32,8 +33,30 @@ public class CompleteDocuments implements Serializable{
 		setViewsValues(new ArrayList<CompleteOperationalValue>());
 		DescriptionText="";
 		Icon ="";
+		Clavilenoid=null;
 	}
 
+
+///TODO
+//	/**
+//	 * @param collectionFather
+//	 * @param completeGrammar
+//	 * @param descriptionText
+//	 * @param icon
+//	 */
+//	public CompleteDocuments(
+//			CompleteCollection collectionFather,
+//			fdi.ucm.server.modelComplete.collection.grammar.CompleteGrammar completeGrammar,
+//			String descriptionText, String icon) {
+//		super();
+//		this.collectionFather = collectionFather;
+//		CompleteGrammar = completeGrammar;
+//		DescriptionText = descriptionText;
+//		Icon = icon;
+//		Description=new ArrayList<CompleteElement>();
+//		setViewsValues(new ArrayList<CompleteOperationalValue>());
+//		Clavilenoid=null;
+//	}
 
 
 	/**
@@ -42,7 +65,7 @@ public class CompleteDocuments implements Serializable{
 	 * @param descriptionText
 	 * @param icon
 	 */
-	public CompleteDocuments(
+	public CompleteDocuments(Long clavilenoId,
 			CompleteCollection collectionFather,
 			fdi.ucm.server.modelComplete.collection.grammar.CompleteGrammar completeGrammar,
 			String descriptionText, String icon) {
@@ -53,20 +76,8 @@ public class CompleteDocuments implements Serializable{
 		Icon = icon;
 		Description=new ArrayList<CompleteElement>();
 		setViewsValues(new ArrayList<CompleteOperationalValue>());
+		Clavilenoid=clavilenoId;
 	}
-
-
-//
-//	/**
-//	 * @param document
-//	 */
-//	public CompleteDocuments(CompleteGrammar document) {
-//		CompleteGrammar = document;
-//		Description=new ArrayList<CompleteElement>();
-//		setViewsValues(new ArrayList<CompleteOperationalValue>());
-//		DescriptionText="";
-//		Icon ="";
-//	}
 
 
 
@@ -165,6 +176,24 @@ public class CompleteDocuments implements Serializable{
 	 */
 	public void setIcon(String icon) {
 		Icon = icon;
+	}
+
+
+
+	/**
+	 * @return the clavilenoid
+	 */
+	public Long getClavilenoid() {
+		return Clavilenoid;
+	}
+
+
+
+	/**
+	 * @param clavilenoid the clavilenoid to set
+	 */
+	public void setClavilenoid(Long clavilenoid) {
+		Clavilenoid = clavilenoid;
 	}
 	
 }

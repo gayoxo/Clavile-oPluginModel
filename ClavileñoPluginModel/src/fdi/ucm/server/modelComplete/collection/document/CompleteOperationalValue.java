@@ -23,21 +23,34 @@ public class CompleteOperationalValue implements Serializable{
 	private static final long serialVersionUID = 1058491057386424065L;
 	private CompleteOperationalValueType type;
 	private String Value;
+	private Long Clavilenoid;
 
 	public CompleteOperationalValue() {
 		super();
 		Value=null;
 		type=null;
+		Clavilenoid=null;
 	}
 
+	
+//	/**
+//	 * @param valor
+//	 */
+//	public CompleteOperationalValue(CompleteOperationalValueType type,String valor) {
+//		super();
+//		Value=valor;
+//		this.type=type;
+//		Clavilenoid=null;
+//	}
 	
 	/**
 	 * @param valor
 	 */
-	public CompleteOperationalValue(CompleteOperationalValueType type,String valor) {
+	public CompleteOperationalValue(Long clavileno,CompleteOperationalValueType type,String valor) {
 		super();
 		Value=valor;
 		this.type=type;
+		Clavilenoid=clavileno;
 	}
 
 
@@ -70,6 +83,22 @@ public class CompleteOperationalValue implements Serializable{
 	 */
 	public void setValue(String value) {
 		Value = value;
+	}
+
+
+	/**
+	 * @return the clavilenoid
+	 */
+	public Long getClavilenoid() {
+		return Clavilenoid;
+	}
+
+
+	/**
+	 * @param clavilenoid the clavilenoid to set
+	 */
+	public void setClavilenoid(Long clavilenoid) {
+		Clavilenoid = clavilenoid;
 	}
 
 
