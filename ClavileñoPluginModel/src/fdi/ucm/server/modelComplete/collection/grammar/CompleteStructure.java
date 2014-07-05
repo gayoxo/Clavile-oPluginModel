@@ -47,6 +47,7 @@ public abstract class CompleteStructure implements Serializable{
 		super();
 		Father = father;
 		Sons=new ArrayList<CompleteStructure>();	
+		collectionFather=ColeccionPadre;
 		Clavilenoid=null;
 	}
 
@@ -59,6 +60,7 @@ public abstract class CompleteStructure implements Serializable{
 		super();
 		Father = father;
 		Sons=new ArrayList<CompleteStructure>();	
+		collectionFather=ColeccionPadre;
 		Clavilenoid=Claviqueno;
 	}
 
