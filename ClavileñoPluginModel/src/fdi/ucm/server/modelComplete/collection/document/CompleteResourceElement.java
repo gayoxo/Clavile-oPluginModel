@@ -20,15 +20,14 @@ public abstract class CompleteResourceElement extends CompleteElement {
 	 */
 	protected static final long serialVersionUID = 1L;
 	
-//TODO
-//	/**
-//	 * COnstructor por defecto.
-//	 * @param hastype 
-//	 * 
-//	 */
-//	public CompleteResourceElement(CompleteResourceElementType hastype) {
-//		super(hastype);
-//	}
+	/**
+	 * COnstructor por defecto.
+	 * @param hastype 
+	 * 
+	 */
+	public CompleteResourceElement(CompleteResourceElementType hastype) {
+		super(hastype);
+	}
 
 	/**
 	 * COnstructor por defecto.

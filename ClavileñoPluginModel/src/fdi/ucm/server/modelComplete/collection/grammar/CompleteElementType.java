@@ -15,7 +15,6 @@ public class CompleteElementType extends CompleteStructure implements Serializab
 	protected String Name;
 	protected ArrayList<CompleteOperationalView> Shows;  
 
-
 	
 	
 	/**
@@ -26,6 +25,7 @@ public class CompleteElementType extends CompleteStructure implements Serializab
 	Father=null;
 	Name="unknown";
 	Shows=new ArrayList<CompleteOperationalView>();
+	
 	}
 
 
@@ -51,6 +51,29 @@ public class CompleteElementType extends CompleteStructure implements Serializab
 				Name = name;
 				Shows=new ArrayList<CompleteOperationalView>();
 			}
+	
+	
+	/** Constructor con todos los parametros
+	 * @param father Padre del attibuto.
+	 * @param name Nombre del atributo.
+	 * @param browseable Define si es navegable
+	 */
+		public CompleteElementType(Long Claviqueno,String name,CompleteGrammar GramaticaPadre) {
+			super(Claviqueno,null,GramaticaPadre);
+			Name = name;
+			Shows=new ArrayList<CompleteOperationalView>();
+		}
+		
+		/** @param father Padre del attibuto.
+		 * @param name Nombre del atributo.
+		 * @param browseable Define si es navegable
+		 */
+			public CompleteElementType(Long Claviqueno,String name, CompleteStructure father) {
+				super(Claviqueno,father,null);
+				Name = name;
+				Shows=new ArrayList<CompleteOperationalView>();
+			}
+	
 	
 	/**
 	 * @return the name

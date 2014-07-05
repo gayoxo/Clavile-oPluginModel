@@ -44,6 +44,24 @@ public class CompleteIterator extends CompleteStructure {
 	}
 	
 	/**
+	 * Constructor con todos los parametros
+ * @param father Padre del attibuto.
+	 */
+	public CompleteIterator(Long claviqueno,CompleteStructure father) {
+		super(claviqueno,father,null);
+		AmbitoSTotales=1;
+	}
+
+	/**
+	 * Constructor con todos los parametros
+ * @param father Padre del attibuto.
+	 */
+	public CompleteIterator(Long claviqueno,CompleteGrammar Padre) {
+		super(claviqueno,null,Padre);
+		AmbitoSTotales=1;
+	}
+	
+	/**
 	 * @return the ambitoSTotales
 	 */
 	public Integer getAmbitoSTotales() {

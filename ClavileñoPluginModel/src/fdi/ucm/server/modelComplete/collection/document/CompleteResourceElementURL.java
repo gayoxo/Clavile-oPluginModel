@@ -32,26 +32,25 @@ public class CompleteResourceElementURL extends CompleteResourceElement {
 		URL=null;
 	}
 	
-	
-//TODO	
-//	/**
-//	 * Constructor con parametros con el hasttype correspondiente.
-//	 * @param hastype tipo al que pertenece.
-//	 */
-//	public CompleteResourceElementURL(CompleteResourceElementType hastype) {
-//		super(hastype);
-//		URL=null;
-//	}
-//
-//	/**
-//	 * Constructor con todos los parametros.
-//	 * @param hastype Elemento al que pertenece.
-//	 * @param value valor de la referencia.
-//	 */
-//	public CompleteResourceElementURL(CompleteResourceElementType hastype, String value) {
-//		super(hastype);
-//		URL = value;
-//	}
+		
+	/**
+	 * Constructor con parametros con el hasttype correspondiente.
+	 * @param hastype tipo al que pertenece.
+	 */
+	public CompleteResourceElementURL(CompleteResourceElementType hastype) {
+		super(hastype);
+		URL=null;
+	}
+
+	/**
+	 * Constructor con todos los parametros.
+	 * @param hastype Elemento al que pertenece.
+	 * @param value valor de la referencia.
+	 */
+	public CompleteResourceElementURL(CompleteResourceElementType hastype, String value) {
+		super(hastype);
+		URL = value;
+	}
 	
 	/**
 	 * Constructor con parametros con el hasttype correspondiente.

@@ -32,16 +32,15 @@ public class CompleteOperationalValue implements Serializable{
 		Clavilenoid=null;
 	}
 
-	
-//	/**
-//	 * @param valor
-//	 */
-//	public CompleteOperationalValue(CompleteOperationalValueType type,String valor) {
-//		super();
-//		Value=valor;
-//		this.type=type;
-//		Clavilenoid=null;
-//	}
+	/**
+	 * @param valor
+	 */
+	public CompleteOperationalValue(CompleteOperationalValueType type,String valor) {
+		super();
+		Value=valor;
+		this.type=type;
+		Clavilenoid=null;
+	}
 	
 	/**
 	 * @param valor

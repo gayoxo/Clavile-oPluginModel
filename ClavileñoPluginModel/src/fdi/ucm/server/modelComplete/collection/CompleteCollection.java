@@ -43,18 +43,17 @@ public class CompleteCollection  implements Serializable{
 				
 	}
 
-	//TODO
-//	/**
-//	 * Constructor por defecto necesario para serializacion
-//	 */
-//	public CompleteCollection(String Namein,String description) {
-//		MetamodelSchemas= new ArrayList<CompleteGrammar>();
-//		SectionValues=new ArrayList<CompleteFile>();
-//		Estructuras=new ArrayList<CompleteDocuments>();
-//		Name=Namein;
-//		id=null;	
-//		Description=description;
-//	}
+	/**
+	 * Constructor por defecto necesario para serializacion
+	 */
+	public CompleteCollection(String Namein,String description) {
+		MetamodelSchemas= new ArrayList<CompleteGrammar>();
+		SectionValues=new ArrayList<CompleteFile>();
+		Estructuras=new ArrayList<CompleteDocuments>();
+		Name=Namein;
+		Clavilenoid=null;	
+		Description=description;
+	}
 	
 	/**
 	 * Constructor por defecto necesario para serializacion

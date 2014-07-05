@@ -24,6 +24,22 @@ public class CompleteTextElementType extends CompleteElementType {
 	 * @param name
 	 * @param father
 	 */
+	public CompleteTextElementType(Long claviqueno,String name,CompleteStructure father) {
+		super(claviqueno,name,father);
+	}
+
+	/**
+	 * @param name
+	 * @param father
+	 */
+	public CompleteTextElementType(Long claviqueno,String name,CompleteGrammar GramaticaPadre) {
+		super(claviqueno,name,GramaticaPadre);
+	}
+	
+	/**
+	 * @param name
+	 * @param father
+	 */
 	public CompleteTextElementType(String name,CompleteStructure father) {
 		super(name,father);
 	}

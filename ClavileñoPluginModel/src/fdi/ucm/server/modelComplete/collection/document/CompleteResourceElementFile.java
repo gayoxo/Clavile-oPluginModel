@@ -32,25 +32,25 @@ public class CompleteResourceElementFile extends CompleteResourceElement {
 		FilePath=null;
 	}
 
-	//TODO
-//	/**
-//	 * Constructor con parametros con el hasttype correspondiente.
-//	 * @param hastype tipo al que pertenece.
-//	 */
-//	public CompleteResourceElementFile(CompleteResourceElementType hastype) {
-//		super(hastype);
-//		FilePath=null;
-//	}
-//
-//	/**
-//	 * Constructor con todos los parametros.
-//	 * @param hastype Elemento al que pertenece.
-//	 * @param value valor de la referencia.
-//	 */
-//	public CompleteResourceElementFile(CompleteResourceElementType hastype, CompleteFile value) {
-//		super(hastype);
-//		FilePath = value;
-//	}
+
+	/**
+	 * Constructor con parametros con el hasttype correspondiente.
+	 * @param hastype tipo al que pertenece.
+	 */
+	public CompleteResourceElementFile(CompleteResourceElementType hastype) {
+		super(hastype);
+		FilePath=null;
+	}
+
+	/**
+	 * Constructor con todos los parametros.
+	 * @param hastype Elemento al que pertenece.
+	 * @param value valor de la referencia.
+	 */
+	public CompleteResourceElementFile(CompleteResourceElementType hastype, CompleteFile value) {
+		super(hastype);
+		FilePath = value;
+	}
 	
 	/**
 	 * Constructor con parametros con el hasttype correspondiente.

@@ -34,17 +34,16 @@ public class CompleteElement implements Serializable {
 		Clavilenoid=null;
 	}
 	
-//TODO
-//	/**
-//	 * Constructor con parametro de entrada de el nodo al que pertenece dentro del esquema.
-//	 * @param hastype
-//	 */
-//	public CompleteElement(CompleteElementType hastype) {
-//		this.hastype = hastype;
-//		Ambitos=new ArrayList<Integer>();
-//		Shows=new ArrayList<CompleteOperationalValue>();
-//		Clavilenoid=null;
-//	}
+	/**
+	 * Constructor con parametro de entrada de el nodo al que pertenece dentro del esquema.
+	 * @param hastype
+	 */
+	public CompleteElement(CompleteElementType hastype) {
+		this.hastype = hastype;
+		Ambitos=new ArrayList<Integer>();
+		Shows=new ArrayList<CompleteOperationalValue>();
+		Clavilenoid=null;
+	}
 
 	/**
 	 * Constructor con parametro de entrada de el nodo al que pertenece dentro del esquema.

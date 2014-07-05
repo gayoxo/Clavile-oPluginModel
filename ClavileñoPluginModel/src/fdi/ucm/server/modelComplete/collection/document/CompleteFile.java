@@ -26,16 +26,16 @@ public class CompleteFile implements Serializable{
 		Clavilenoid=null;
 	}
 	
-//	/**
-//	 * @param path
-//	 * @param collectionFather
-//	 */
-//	public CompleteFile(String path, CompleteCollection collectionFather) {
-//		super();
-//		Path = path;
-//		this.collectionFather = collectionFather;
-//		Clavilenoid=null;
-//	}
+	/**
+	 * @param path
+	 * @param collectionFather
+	 */
+	public CompleteFile(String path, CompleteCollection collectionFather) {
+		super();
+		Path = path;
+		this.collectionFather = collectionFather;
+		Clavilenoid=null;
+	}
 
 	
 	/**

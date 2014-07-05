@@ -17,12 +17,13 @@ public class CompleteOperationalValueType implements Serializable{
 	protected String Default;
 	protected String Name;
 	protected CompleteOperationalView View;
-
+	private Long Clavilenoid;
 	
 	public CompleteOperationalValueType() {
 		super();
 		Default=null;
 		Name=null;
+		Clavilenoid=null;
 	}
 
 	
@@ -36,8 +37,21 @@ public class CompleteOperationalValueType implements Serializable{
 		Default=defaultV;
 		this.Name=Name;
 		View=padre;
+		Clavilenoid=null;
 	}
 
+	/**
+	 * 
+	 * @param Name
+	 * @param defaultV
+	 */
+	public CompleteOperationalValueType(Long claviqueno,String Name,String defaultV,CompleteOperationalView padre) {
+		super();
+		Default=defaultV;
+		this.Name=Name;
+		View=padre;
+		Clavilenoid=claviqueno;
+	}
 
 	/**
 	 * @return the default
@@ -84,6 +98,22 @@ public class CompleteOperationalValueType implements Serializable{
 	 */
 	public void setView(CompleteOperationalView view) {
 		View = view;
+	}
+
+
+	/**
+	 * @return the clavilenoid
+	 */
+	public Long getClavilenoid() {
+		return Clavilenoid;
+	}
+
+
+	/**
+	 * @param clavilenoid the clavilenoid to set
+	 */
+	public void setClavilenoid(Long clavilenoid) {
+		Clavilenoid = clavilenoid;
 	}
 	
 	

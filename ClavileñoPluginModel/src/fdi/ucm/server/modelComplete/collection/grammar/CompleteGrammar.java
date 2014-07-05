@@ -24,6 +24,7 @@ public class CompleteGrammar implements Serializable{
 	private String Description;
 	private ArrayList<CompleteOperationalView> Views;
 	private CompleteCollection Coleccion;
+	private Long Clavilenoid;
 	
 	
 	public CompleteGrammar() {
@@ -31,6 +32,7 @@ public class CompleteGrammar implements Serializable{
 		Nombre=null;
 		Description=null;
 		Views=new ArrayList<CompleteOperationalView>();
+		Clavilenoid=null;
 	}
 
 
@@ -45,10 +47,23 @@ public class CompleteGrammar implements Serializable{
 		Sons=new ArrayList<CompleteStructure>();
 		Views=new ArrayList<CompleteOperationalView>();
 		Coleccion=coleccion;
-		
+		Clavilenoid=null;
 	}
 
-
+	/**
+	 * @param nombre
+	 * @param description
+	 */
+	public CompleteGrammar(Long claviqueno,String nombre, String description,CompleteCollection coleccion) {
+		super();
+		Nombre = nombre;
+		Description = description;
+		Sons=new ArrayList<CompleteStructure>();
+		Views=new ArrayList<CompleteOperationalView>();
+		Coleccion=coleccion;
+		Clavilenoid=claviqueno;
+	}
+	
 	/**
 	 * @return the sons
 	 */
@@ -126,6 +141,22 @@ public class CompleteGrammar implements Serializable{
 	 */
 	public void setColeccion(CompleteCollection coleccion) {
 		Coleccion = coleccion;
+	}
+
+
+	/**
+	 * @return the clavilenoid
+	 */
+	public Long getClavilenoid() {
+		return Clavilenoid;
+	}
+
+
+	/**
+	 * @param clavilenoid the clavilenoid to set
+	 */
+	public void setClavilenoid(Long clavilenoid) {
+		Clavilenoid = clavilenoid;
 	}
 	
 	

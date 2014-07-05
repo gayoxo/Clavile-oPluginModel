@@ -37,26 +37,25 @@ public class CompleteDocuments implements Serializable{
 	}
 
 
-///TODO
-//	/**
-//	 * @param collectionFather
-//	 * @param completeGrammar
-//	 * @param descriptionText
-//	 * @param icon
-//	 */
-//	public CompleteDocuments(
-//			CompleteCollection collectionFather,
-//			fdi.ucm.server.modelComplete.collection.grammar.CompleteGrammar completeGrammar,
-//			String descriptionText, String icon) {
-//		super();
-//		this.collectionFather = collectionFather;
-//		CompleteGrammar = completeGrammar;
-//		DescriptionText = descriptionText;
-//		Icon = icon;
-//		Description=new ArrayList<CompleteElement>();
-//		setViewsValues(new ArrayList<CompleteOperationalValue>());
-//		Clavilenoid=null;
-//	}
+	/**
+	 * @param collectionFather
+	 * @param completeGrammar
+	 * @param descriptionText
+	 * @param icon
+	 */
+	public CompleteDocuments(
+			CompleteCollection collectionFather,
+			fdi.ucm.server.modelComplete.collection.grammar.CompleteGrammar completeGrammar,
+			String descriptionText, String icon) {
+		super();
+		this.collectionFather = collectionFather;
+		CompleteGrammar = completeGrammar;
+		DescriptionText = descriptionText;
+		Icon = icon;
+		Description=new ArrayList<CompleteElement>();
+		setViewsValues(new ArrayList<CompleteOperationalValue>());
+		Clavilenoid=null;
+	}
 
 
 	/**

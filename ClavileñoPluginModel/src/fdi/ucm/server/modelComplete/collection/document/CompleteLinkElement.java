@@ -30,25 +30,25 @@ public class CompleteLinkElement extends CompleteElement {
 		RValue=null;
 	}
 
-	//TODO
-//	/**
-//	 * Constructor con parametros con el hasttype correspondiente.
-//	 * @param hastype tipo al que pertenece.
-//	 */
-//	public CompleteLinkElement(CompleteLinkElementType hastype) {
-//		super(hastype);
-//		RValue=null;
-//	}
-//
-//	/**
-//	 * Constructor con todos los parametros.
-//	 * @param hastype Elemento al que pertenece.
-//	 * @param value valor de la referencia.
-//	 */
-//	public CompleteLinkElement(CompleteLinkElementType hastype, CompleteDocuments value) {
-//		super(hastype);
-//		RValue = value;
-//	}
+
+	/**
+	 * Constructor con parametros con el hasttype correspondiente.
+	 * @param hastype tipo al que pertenece.
+	 */
+	public CompleteLinkElement(CompleteLinkElementType hastype) {
+		super(hastype);
+		RValue=null;
+	}
+
+	/**
+	 * Constructor con todos los parametros.
+	 * @param hastype Elemento al que pertenece.
+	 * @param value valor de la referencia.
+	 */
+	public CompleteLinkElement(CompleteLinkElementType hastype, CompleteDocuments value) {
+		super(hastype);
+		RValue = value;
+	}
 	
 	/**
 	 * Constructor con parametros con el hasttype correspondiente.

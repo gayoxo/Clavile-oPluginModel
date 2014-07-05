@@ -25,24 +25,24 @@ public class CompleteTextElement extends CompleteElement {
 		TValue=null;
 	}
 
-//	/**
-//	 * Constructor por parametrps de la clase
-//	 * @param hastype clase padre
-//	 */
-//	public CompleteTextElement(CompleteTextElementType hastype) {
-//		super(hastype);
-//		TValue=null;
-//	}
-//
-//	/**
-//	 * Constructor por parametrps de la clase.
-//	 * @param hastype clase padre.
-//	 * @param Value valor del Texto.
-//	 */
-//	public CompleteTextElement(CompleteTextElementType hastype, String Valuein) {
-//		super(hastype);
-//		TValue=Valuein;
-//	}
+	/**
+	 * Constructor por parametrps de la clase
+	 * @param hastype clase padre
+	 */
+	public CompleteTextElement(CompleteTextElementType hastype) {
+		super(hastype);
+		TValue=null;
+	}
+
+	/**
+	 * Constructor por parametrps de la clase.
+	 * @param hastype clase padre.
+	 * @param Value valor del Texto.
+	 */
+	public CompleteTextElement(CompleteTextElementType hastype, String Valuein) {
+		super(hastype);
+		TValue=Valuein;
+	}
 
 	/**
 	 * Constructor por parametrps de la clase

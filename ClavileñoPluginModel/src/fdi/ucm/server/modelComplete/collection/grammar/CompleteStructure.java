@@ -24,7 +24,8 @@ public abstract class CompleteStructure implements Serializable{
 	protected List<CompleteStructure> Sons=new ArrayList<CompleteStructure>();
 	
 	protected CompleteStructure Father;
-//	private int PositionInFather=0;
+	
+	private Long Clavilenoid;
 	
 
 	/**
@@ -34,6 +35,7 @@ public abstract class CompleteStructure implements Serializable{
 		Sons=new ArrayList<CompleteStructure>();	
 		Father=null;
 	//	PositionInFather=0;
+		Clavilenoid=null;
 	}
 	
 	
@@ -45,10 +47,20 @@ public abstract class CompleteStructure implements Serializable{
 		super();
 		Father = father;
 		Sons=new ArrayList<CompleteStructure>();	
+		Clavilenoid=null;
 	}
 
 
-
+	/**
+	 * Constructor con parametros
+	 * @param father padre del objeto
+	 */
+	public CompleteStructure(Long Claviqueno,CompleteStructure father,CompleteGrammar ColeccionPadre) {
+		super();
+		Father = father;
+		Sons=new ArrayList<CompleteStructure>();	
+		Clavilenoid=Claviqueno;
+	}
 
 	/**
 	 *  Retorna el Texto que representa al path.
@@ -95,22 +107,6 @@ public abstract class CompleteStructure implements Serializable{
 
 
 
-//	/**
-//	 * @return the positionInFather
-//	 */
-//	public int getPositionInFather() {
-//		return PositionInFather;
-//	}
-//
-//
-//	/**
-//	 * @param positionInFather the positionInFather to set
-//	 */
-//	public void setPositionInFather(int positionInFather) {
-//		PositionInFather = positionInFather;
-//	}
-//	
-
 
 	/**
 	 * @return the collectionFather
@@ -125,6 +121,22 @@ public abstract class CompleteStructure implements Serializable{
 	 */
 	public void setCollectionFather(CompleteGrammar collectionFather) {
 		this.collectionFather = collectionFather;
+	}
+
+
+	/**
+	 * @return the clavilenoid
+	 */
+	public Long getClavilenoid() {
+		return Clavilenoid;
+	}
+
+
+	/**
+	 * @param clavilenoid the clavilenoid to set
+	 */
+	public void setClavilenoid(Long clavilenoid) {
+		Clavilenoid = clavilenoid;
 	}
 
 	

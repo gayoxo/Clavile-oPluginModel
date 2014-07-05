@@ -17,17 +17,26 @@ public class CompleteOperationalView implements Serializable{
 	private static final long serialVersionUID = -5553181915585551551L;
 	protected String name;
 	protected ArrayList<CompleteOperationalValueType> Values;
-	
+	private Long Clavilenoid;
 	
 	public CompleteOperationalView() {
 		name="Error";
 		Values=new ArrayList<CompleteOperationalValueType>();
+		Clavilenoid=null;
 	}
 
 	public CompleteOperationalView(String value)
 	{
 		name=value;
 		Values=new ArrayList<CompleteOperationalValueType>();
+		Clavilenoid=null;
+	}
+	
+	public CompleteOperationalView(Long claviqueno,String value)
+	{
+		name=value;
+		Values=new ArrayList<CompleteOperationalValueType>();
+		Clavilenoid=claviqueno;
 	}
 
 	/**
@@ -56,5 +65,19 @@ public class CompleteOperationalView implements Serializable{
 	 */
 	public void setValues(ArrayList<CompleteOperationalValueType> values) {
 		Values = values;
+	}
+
+	/**
+	 * @return the clavilenoid
+	 */
+	public Long getClavilenoid() {
+		return Clavilenoid;
+	}
+
+	/**
+	 * @param clavilenoid the clavilenoid to set
+	 */
+	public void setClavilenoid(Long clavilenoid) {
+		Clavilenoid = clavilenoid;
 	}
 }
