@@ -57,4 +57,11 @@ public abstract class SaveCollection {
 	 * @return
 	 */
 	public abstract String FileOutput();
+	
+	/**
+	 * Path del file en caso de que la salida sea correcta
+	 * @return
+	 */
+	public abstract void SetlocalTemporalFolder(String TemporalPath);
+	
 }
