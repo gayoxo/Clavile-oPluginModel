@@ -5,6 +5,7 @@ package fdi.ucm.server.modelComplete;
 
 import java.util.ArrayList;
 
+import fdi.ucm.server.modelComplete.collection.CompleteCollection;
 import fdi.ucm.server.modelComplete.collection.CompleteCollectionAndLog;
 
 /**
@@ -30,7 +31,7 @@ public abstract class UpdateCollection {
 	 * @param dateEntrada 
 	 * @return la nueva coleccion.
 	 */
-	public abstract CompleteCollectionAndLog processCollecccion(ArrayList<String> dateEntrada);
+	public abstract CompleteCollectionAndLog processCollecccion(ArrayList<String> dateEntrada, CompleteCollection ColeccionActual);
 	
 	
 	/**
