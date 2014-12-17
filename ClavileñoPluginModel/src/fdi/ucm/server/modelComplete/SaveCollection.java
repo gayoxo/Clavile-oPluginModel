@@ -6,7 +6,7 @@ package fdi.ucm.server.modelComplete;
 import java.util.ArrayList;
 
 import fdi.ucm.server.modelComplete.collection.CompleteCollection;
-import fdi.ucm.server.modelComplete.collection.CompleteCollectionLog;
+import fdi.ucm.server.modelComplete.collection.CompleteLogAndUpdates;
 
 /**
  * Clase que define el iterface de salvado en el sistema.
@@ -25,7 +25,7 @@ public abstract class SaveCollection {
 	 * @param Salvar Clase a salvar.
 	 * @return resultado del salvado.
 	 */
-	public abstract CompleteCollectionLog processCollecccion(CompleteCollection Salvar,String PathTemporalFiles) throws CompleteImportRuntimeException;
+	public abstract CompleteLogAndUpdates processCollecccion(CompleteCollection Salvar,String PathTemporalFiles) throws CompleteImportRuntimeException;
 	
 	
 	/**
