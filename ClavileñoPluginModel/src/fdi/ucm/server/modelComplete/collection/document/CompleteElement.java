@@ -53,7 +53,7 @@ public class CompleteElement implements Serializable {
 		this.hastype = hastype;
 		Ambitos=new ArrayList<Integer>();
 		Shows=new ArrayList<CompleteOperationalValue>();
-		Clavilenoid=null;
+		Clavilenoid=clavilenoId;
 	}
 	
 	/**
