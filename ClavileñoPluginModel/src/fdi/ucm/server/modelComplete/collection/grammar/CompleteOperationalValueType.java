@@ -16,7 +16,7 @@ public class CompleteOperationalValueType implements Serializable{
 	private static final long serialVersionUID = 2611988084685026790L;
 	protected String Default;
 	protected String Name;
-	protected CompleteOperationalView View;
+	protected String View;
 	private Long Clavilenoid;
 	
 	public CompleteOperationalValueType() {
@@ -32,7 +32,7 @@ public class CompleteOperationalValueType implements Serializable{
 	 * @param Name
 	 * @param defaultV
 	 */
-	public CompleteOperationalValueType(String Name,String defaultV,CompleteOperationalView padre) {
+	public CompleteOperationalValueType(String Name,String defaultV,String padre) {
 		super();
 		Default=defaultV;
 		this.Name=Name;
@@ -45,7 +45,7 @@ public class CompleteOperationalValueType implements Serializable{
 	 * @param Name
 	 * @param defaultV
 	 */
-	public CompleteOperationalValueType(Long claviqueno,String Name,String defaultV,CompleteOperationalView padre) {
+	public CompleteOperationalValueType(Long claviqueno,String Name,String defaultV,String padre) {
 		super();
 		Default=defaultV;
 		this.Name=Name;
@@ -88,7 +88,7 @@ public class CompleteOperationalValueType implements Serializable{
 	/**
 	 * @return the view
 	 */
-	public CompleteOperationalView getView() {
+	public String getView() {
 		return View;
 	}
 
@@ -96,7 +96,7 @@ public class CompleteOperationalValueType implements Serializable{
 	/**
 	 * @param view the view to set
 	 */
-	public void setView(CompleteOperationalView view) {
+	public void setView(String view) {
 		View = view;
 	}
 

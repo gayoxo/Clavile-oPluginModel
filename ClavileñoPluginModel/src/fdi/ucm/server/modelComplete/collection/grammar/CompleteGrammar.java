@@ -22,7 +22,7 @@ public class CompleteGrammar implements Serializable{
 	private ArrayList<CompleteStructure> Sons;
 	private String Nombre;
 	private String Description;
-	private ArrayList<CompleteOperationalView> Views;
+	private ArrayList<CompleteOperationalValueType> Views;
 	private CompleteCollection Coleccion;
 	private Long Clavilenoid;
 	
@@ -31,7 +31,7 @@ public class CompleteGrammar implements Serializable{
 		Sons=new ArrayList<CompleteStructure>();
 		Nombre=null;
 		Description=null;
-		Views=new ArrayList<CompleteOperationalView>();
+		Views=new ArrayList<CompleteOperationalValueType>();
 		Clavilenoid=null;
 	}
 
@@ -45,7 +45,7 @@ public class CompleteGrammar implements Serializable{
 		Nombre = nombre;
 		Description = description;
 		Sons=new ArrayList<CompleteStructure>();
-		Views=new ArrayList<CompleteOperationalView>();
+		Views=new ArrayList<CompleteOperationalValueType>();
 		Coleccion=coleccion;
 		Clavilenoid=null;
 	}
@@ -59,7 +59,7 @@ public class CompleteGrammar implements Serializable{
 		Nombre = nombre;
 		Description = description;
 		Sons=new ArrayList<CompleteStructure>();
-		Views=new ArrayList<CompleteOperationalView>();
+		Views=new ArrayList<CompleteOperationalValueType>();
 		Coleccion=coleccion;
 		Clavilenoid=claviqueno;
 	}
@@ -115,7 +115,7 @@ public class CompleteGrammar implements Serializable{
 	/**
 	 * @return the views
 	 */
-	public ArrayList<CompleteOperationalView> getViews() {
+	public ArrayList<CompleteOperationalValueType> getViews() {
 		return Views;
 	}
 
@@ -123,7 +123,7 @@ public class CompleteGrammar implements Serializable{
 	/**
 	 * @param views the views to set
 	 */
-	public void setViews(ArrayList<CompleteOperationalView> views) {
+	public void setViews(ArrayList<CompleteOperationalValueType> views) {
 		Views = views;
 	}
 
