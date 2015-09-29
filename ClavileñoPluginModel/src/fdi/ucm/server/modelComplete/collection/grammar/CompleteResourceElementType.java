@@ -6,7 +6,7 @@ package fdi.ucm.server.modelComplete.collection.grammar;
  * @author Joaquin Gayoso
  *
  */
-public class CompleteResourceElementType extends CompleteElementType{
+public class CompleteResourceElementType extends CompleteStructure{
 
 	private static final long serialVersionUID = 1L;
 	
@@ -21,8 +21,8 @@ public class CompleteResourceElementType extends CompleteElementType{
 	 * @param father
 	 * @param summary
 	 */
-	public CompleteResourceElementType(String name, CompleteStructure father) {
-		super(name,father);
+	public CompleteResourceElementType(String name, CompleteStructure father, CompleteGrammar GramaticaPadre) {
+		super(name,father,GramaticaPadre);
 	}
 	
 	/**
@@ -39,8 +39,8 @@ public class CompleteResourceElementType extends CompleteElementType{
 	 * @param father
 	 * @param summary
 	 */
-	public CompleteResourceElementType(Long claviqueno,String name, CompleteStructure father) {
-		super(claviqueno,name,father);
+	public CompleteResourceElementType(Long claviqueno,String name, CompleteStructure father, CompleteGrammar GramaticaPadre) {
+		super(claviqueno,name,father,GramaticaPadre);
 	}
 	
 	/**

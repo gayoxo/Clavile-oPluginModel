@@ -13,7 +13,7 @@ import java.util.List;
  * @author Joaquin Gayoso-Cabada
  *
  */
-public abstract class CompleteStructure implements Serializable{
+public class CompleteStructure implements Serializable{
 	
 
 	
@@ -27,6 +27,15 @@ public abstract class CompleteStructure implements Serializable{
 	
 	private Long Clavilenoid;
 	
+	protected String Name;
+	
+	protected ArrayList<CompleteOperationalValueType> Shows;
+	
+	protected CompleteStructure BFather;
+	
+	protected CompleteStructure BSon;
+	
+	protected boolean Navegable;
 
 	/**
 	 * Consctructor por defecto
@@ -34,8 +43,10 @@ public abstract class CompleteStructure implements Serializable{
 	public CompleteStructure() {
 		Sons=new ArrayList<CompleteStructure>();	
 		Father=null;
-	//	PositionInFather=0;
 		Clavilenoid=null;
+		Name="~unknow";
+		Shows=new ArrayList<CompleteOperationalValueType>();
+		Navegable=false;
 	}
 	
 	
@@ -43,12 +54,31 @@ public abstract class CompleteStructure implements Serializable{
 	 * Constructor con parametros
 	 * @param father padre del objeto
 	 */
-	public CompleteStructure(CompleteStructure father,CompleteGrammar ColeccionPadre) {
+	public CompleteStructure(String name,CompleteGrammar ColeccionPadre) {
+		super();
+		Father = null;
+		Sons=new ArrayList<CompleteStructure>();	
+		collectionFather=ColeccionPadre;
+		Clavilenoid=null;
+		Name=name;
+		Shows=new ArrayList<CompleteOperationalValueType>();
+		Navegable=false;
+	}
+	
+	
+	/**
+	 * Constructor con parametros
+	 * @param father padre del objeto
+	 */
+	public CompleteStructure(String name,CompleteStructure father,CompleteGrammar ColeccionPadre) {
 		super();
 		Father = father;
 		Sons=new ArrayList<CompleteStructure>();	
 		collectionFather=ColeccionPadre;
 		Clavilenoid=null;
+		Name=name;
+		Shows=new ArrayList<CompleteOperationalValueType>();
+		Navegable=false;
 	}
 
 
@@ -56,12 +86,31 @@ public abstract class CompleteStructure implements Serializable{
 	 * Constructor con parametros
 	 * @param father padre del objeto
 	 */
-	public CompleteStructure(Long Claviqueno,CompleteStructure father,CompleteGrammar ColeccionPadre) {
+	public CompleteStructure(Long Claviqueno,String name,CompleteGrammar ColeccionPadre) {
+		super();
+		Father = null;
+		Sons=new ArrayList<CompleteStructure>();	
+		collectionFather=ColeccionPadre;
+		Clavilenoid=Claviqueno;
+		Name=name;
+		Shows=new ArrayList<CompleteOperationalValueType>();
+		Navegable=false;
+	}
+	
+	
+	/**
+	 * Constructor con parametros
+	 * @param father padre del objeto
+	 */
+	public CompleteStructure(Long Claviqueno,String name,CompleteStructure father,CompleteGrammar ColeccionPadre) {
 		super();
 		Father = father;
 		Sons=new ArrayList<CompleteStructure>();	
 		collectionFather=ColeccionPadre;
 		Clavilenoid=Claviqueno;
+		Name=name;
+		Shows=new ArrayList<CompleteOperationalValueType>();
+		Navegable=false;
 	}
 
 	/**
@@ -139,6 +188,86 @@ public abstract class CompleteStructure implements Serializable{
 	 */
 	public void setClavilenoid(Long clavilenoid) {
 		Clavilenoid = clavilenoid;
+	}
+
+
+	/**
+	 * @return the bFather
+	 */
+	public CompleteStructure getBFather() {
+		return BFather;
+	}
+
+
+	/**
+	 * @param bFather the bFather to set
+	 */
+	public void setBFather(CompleteStructure bFather) {
+		BFather = bFather;
+	}
+
+
+	/**
+	 * @return the bSon
+	 */
+	public CompleteStructure getBSon() {
+		return BSon;
+	}
+
+
+	/**
+	 * @param bSon the bSon to set
+	 */
+	public void setBSon(CompleteStructure bSon) {
+		BSon = bSon;
+	}
+
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return Name;
+	}
+
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		Name = name;
+	}
+
+
+	/**
+	 * @return the shows
+	 */
+	public ArrayList<CompleteOperationalValueType> getShows() {
+		return Shows;
+	}
+
+
+	/**
+	 * @param shows the shows to set
+	 */
+	public void setShows(ArrayList<CompleteOperationalValueType> shows) {
+		Shows = shows;
+	}
+
+
+	/**
+	 * @return the navegable
+	 */
+	public boolean isNavegable() {
+		return Navegable;
+	}
+
+
+	/**
+	 * @param navegable the navegable to set
+	 */
+	public void setNavegable(boolean navegable) {
+		Navegable = navegable;
 	}
 
 	

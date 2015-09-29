@@ -3,8 +3,7 @@ package fdi.ucm.server.modelComplete.collection.document;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-
-import fdi.ucm.server.modelComplete.collection.grammar.CompleteElementType;
+import fdi.ucm.server.modelComplete.collection.grammar.CompleteStructure;
 
 
 
@@ -21,15 +20,13 @@ public class CompleteElement implements Serializable {
 	
 	private Long Clavilenoid;
 	private static final long serialVersionUID = 1L;
-	protected CompleteElementType hastype;
-	protected ArrayList<Integer> Ambitos;
+	protected CompleteStructure hastype;
 	protected ArrayList<CompleteOperationalValue> Shows;  
 	
 	/**
 	 * Constructor por defecto.
 	 */
 	public CompleteElement() {
-		Ambitos=new ArrayList<Integer>();
 		Shows=new ArrayList<CompleteOperationalValue>();
 		Clavilenoid=null;
 	}
@@ -38,9 +35,8 @@ public class CompleteElement implements Serializable {
 	 * Constructor con parametro de entrada de el nodo al que pertenece dentro del esquema.
 	 * @param hastype
 	 */
-	public CompleteElement(CompleteElementType hastype) {
+	public CompleteElement(CompleteStructure hastype) {
 		this.hastype = hastype;
-		Ambitos=new ArrayList<Integer>();
 		Shows=new ArrayList<CompleteOperationalValue>();
 		Clavilenoid=null;
 	}
@@ -49,9 +45,8 @@ public class CompleteElement implements Serializable {
 	 * Constructor con parametro de entrada de el nodo al que pertenece dentro del esquema.
 	 * @param hastype
 	 */
-	public CompleteElement(Long clavilenoId,CompleteElementType hastype) {
+	public CompleteElement(Long clavilenoId,CompleteStructure hastype) {
 		this.hastype = hastype;
-		Ambitos=new ArrayList<Integer>();
 		Shows=new ArrayList<CompleteOperationalValue>();
 		Clavilenoid=clavilenoId;
 	}
@@ -59,7 +54,7 @@ public class CompleteElement implements Serializable {
 	/**
 	 * @return the hastype
 	 */
-	public CompleteElementType getHastype() {
+	public CompleteStructure getHastype() {
 		return hastype;
 		
 	}
@@ -67,22 +62,8 @@ public class CompleteElement implements Serializable {
 	/**
 	 * @param hastype the hastype to set
 	 */
-	public void setHastype(CompleteElementType hastype) {
+	public void setHastype(CompleteStructure hastype) {
 		this.hastype = hastype;
-	}
-
-	/**
-	 * @return the ambitos
-	 */
-	public ArrayList<Integer> getAmbitos() {
-		return Ambitos;
-	}
-
-	/**
-	 * @param ambitos the ambitos to set
-	 */
-	public void setAmbitos(ArrayList<Integer> ambitos) {
-		Ambitos = ambitos;
 	}
 
 
