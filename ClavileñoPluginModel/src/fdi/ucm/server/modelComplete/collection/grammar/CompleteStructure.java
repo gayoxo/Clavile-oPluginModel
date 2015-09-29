@@ -35,8 +35,9 @@ public class CompleteStructure implements Serializable{
 	
 	protected CompleteStructure BSon;
 	
-	protected boolean Navegable;
+	protected boolean Browseable;
 
+	protected boolean Multivalued;
 	/**
 	 * Consctructor por defecto
 	 */
@@ -46,7 +47,8 @@ public class CompleteStructure implements Serializable{
 		Clavilenoid=null;
 		Name="~unknow";
 		Shows=new ArrayList<CompleteOperationalValueType>();
-		Navegable=false;
+		Browseable=false;
+		Multivalued=false;
 	}
 	
 	
@@ -62,7 +64,8 @@ public class CompleteStructure implements Serializable{
 		Clavilenoid=null;
 		Name=name;
 		Shows=new ArrayList<CompleteOperationalValueType>();
-		Navegable=false;
+		Browseable=false;
+		Multivalued=false;
 	}
 	
 	
@@ -78,7 +81,8 @@ public class CompleteStructure implements Serializable{
 		Clavilenoid=null;
 		Name=name;
 		Shows=new ArrayList<CompleteOperationalValueType>();
-		Navegable=false;
+		Browseable=false;
+		Multivalued=false;
 	}
 
 
@@ -94,7 +98,8 @@ public class CompleteStructure implements Serializable{
 		Clavilenoid=Claviqueno;
 		Name=name;
 		Shows=new ArrayList<CompleteOperationalValueType>();
-		Navegable=false;
+		Browseable=false;
+		Multivalued=false;
 	}
 	
 	
@@ -110,7 +115,8 @@ public class CompleteStructure implements Serializable{
 		Clavilenoid=Claviqueno;
 		Name=name;
 		Shows=new ArrayList<CompleteOperationalValueType>();
-		Navegable=false;
+		Browseable=false;
+		Multivalued=false;
 	}
 
 	/**
@@ -256,19 +262,38 @@ public class CompleteStructure implements Serializable{
 
 
 	/**
-	 * @return the navegable
+	 * @return the browseable
 	 */
-	public boolean isNavegable() {
-		return Navegable;
+	public boolean isBrowseable() {
+		return Browseable;
 	}
 
 
 	/**
-	 * @param navegable the navegable to set
+	 * @param browseable the browseable to set
 	 */
-	public void setNavegable(boolean navegable) {
-		Navegable = navegable;
+	public void setBrowseable(boolean browseable) {
+		Browseable = browseable;
 	}
+
+
+	/**
+	 * @return the multivalued
+	 */
+	public boolean isMultivalued() {
+		return Multivalued;
+	}
+
+
+	/**
+	 * @param multivalued the multivalued to set
+	 */
+	public void setMultivalued(boolean multivalued) {
+		Multivalued = multivalued;
+	}
+
+
+	
 
 	
 	
