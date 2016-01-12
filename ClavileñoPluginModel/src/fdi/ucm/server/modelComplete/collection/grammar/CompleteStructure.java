@@ -38,6 +38,9 @@ public class CompleteStructure implements Serializable{
 	protected boolean Browseable;
 
 	protected boolean Multivalued;
+	
+	private CompleteStructure ClassOfIterator;
+	
 	/**
 	 * Consctructor por defecto
 	 */
@@ -49,6 +52,7 @@ public class CompleteStructure implements Serializable{
 		Shows=new ArrayList<CompleteOperationalValueType>();
 		Browseable=false;
 		Multivalued=false;
+		ClassOfIterator=null;
 	}
 	
 	
@@ -66,6 +70,7 @@ public class CompleteStructure implements Serializable{
 		Shows=new ArrayList<CompleteOperationalValueType>();
 		Browseable=false;
 		Multivalued=false;
+		ClassOfIterator=null;
 	}
 	
 	
@@ -83,6 +88,7 @@ public class CompleteStructure implements Serializable{
 		Shows=new ArrayList<CompleteOperationalValueType>();
 		Browseable=false;
 		Multivalued=false;
+		ClassOfIterator=null;
 	}
 
 
@@ -100,6 +106,7 @@ public class CompleteStructure implements Serializable{
 		Shows=new ArrayList<CompleteOperationalValueType>();
 		Browseable=false;
 		Multivalued=false;
+		ClassOfIterator=null;
 	}
 	
 	
@@ -117,6 +124,7 @@ public class CompleteStructure implements Serializable{
 		Shows=new ArrayList<CompleteOperationalValueType>();
 		Browseable=false;
 		Multivalued=false;
+		ClassOfIterator=null;
 	}
 
 	/**
@@ -293,7 +301,13 @@ public class CompleteStructure implements Serializable{
 	}
 
 
+	public CompleteStructure getClassOfIterator() {
+		return ClassOfIterator;
+	}
 	
+	public void setClassOfIterator(CompleteStructure classOfIterator) {
+		ClassOfIterator = classOfIterator;
+	}
 
 	
 	
