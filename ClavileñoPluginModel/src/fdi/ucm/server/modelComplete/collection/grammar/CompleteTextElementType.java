@@ -9,7 +9,7 @@ package fdi.ucm.server.modelComplete.collection.grammar;
  * @author Joaquin Gayoso-Cabada
  *
  */
-public class CompleteTextElementType extends CompleteStructure {
+public class CompleteTextElementType extends CompleteElementType {
 
 	private static final long serialVersionUID = -3295083410485450541L;
 
@@ -24,7 +24,7 @@ public class CompleteTextElementType extends CompleteStructure {
 	 * @param name
 	 * @param father
 	 */
-	public CompleteTextElementType(Long claviqueno,String name,CompleteStructure father, CompleteGrammar GramaticaPadre) {
+	public CompleteTextElementType(Long claviqueno,String name,CompleteElementType father, CompleteGrammar GramaticaPadre) {
 		super(claviqueno,name,father,GramaticaPadre);
 	}
 
@@ -40,7 +40,7 @@ public class CompleteTextElementType extends CompleteStructure {
 	 * @param name
 	 * @param father
 	 */
-	public CompleteTextElementType(String name,CompleteStructure father, CompleteGrammar GramaticaPadre) {
+	public CompleteTextElementType(String name,CompleteElementType father, CompleteGrammar GramaticaPadre) {
 		super(name,father,GramaticaPadre);
 	}
 

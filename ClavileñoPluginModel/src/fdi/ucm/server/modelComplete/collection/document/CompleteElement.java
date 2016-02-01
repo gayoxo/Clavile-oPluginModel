@@ -3,7 +3,7 @@ package fdi.ucm.server.modelComplete.collection.document;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-import fdi.ucm.server.modelComplete.collection.grammar.CompleteStructure;
+import fdi.ucm.server.modelComplete.collection.grammar.CompleteElementType;
 
 
 
@@ -20,7 +20,7 @@ public class CompleteElement implements Serializable {
 	
 	private Long Clavilenoid;
 	private static final long serialVersionUID = 1L;
-	protected CompleteStructure hastype;
+	protected CompleteElementType hastype;
 	protected ArrayList<CompleteOperationalValue> Shows;  
 	
 	/**
@@ -35,7 +35,7 @@ public class CompleteElement implements Serializable {
 	 * Constructor con parametro de entrada de el nodo al que pertenece dentro del esquema.
 	 * @param hastype
 	 */
-	public CompleteElement(CompleteStructure hastype) {
+	public CompleteElement(CompleteElementType hastype) {
 		this.hastype = hastype;
 		Shows=new ArrayList<CompleteOperationalValue>();
 		Clavilenoid=null;
@@ -45,7 +45,7 @@ public class CompleteElement implements Serializable {
 	 * Constructor con parametro de entrada de el nodo al que pertenece dentro del esquema.
 	 * @param hastype
 	 */
-	public CompleteElement(Long clavilenoId,CompleteStructure hastype) {
+	public CompleteElement(Long clavilenoId,CompleteElementType hastype) {
 		this.hastype = hastype;
 		Shows=new ArrayList<CompleteOperationalValue>();
 		Clavilenoid=clavilenoId;
@@ -54,7 +54,7 @@ public class CompleteElement implements Serializable {
 	/**
 	 * @return the hastype
 	 */
-	public CompleteStructure getHastype() {
+	public CompleteElementType getHastype() {
 		return hastype;
 		
 	}
@@ -62,7 +62,7 @@ public class CompleteElement implements Serializable {
 	/**
 	 * @param hastype the hastype to set
 	 */
-	public void setHastype(CompleteStructure hastype) {
+	public void setHastype(CompleteElementType hastype) {
 		this.hastype = hastype;
 	}
 

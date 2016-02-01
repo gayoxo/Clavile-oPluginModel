@@ -13,7 +13,7 @@ import java.util.List;
  * @author Joaquin Gayoso-Cabada
  *
  */
-public class CompleteStructure implements Serializable{
+public class CompleteElementType implements Serializable{
 	
 
 	
@@ -21,9 +21,9 @@ public class CompleteStructure implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	
-	protected List<CompleteStructure> Sons=new ArrayList<CompleteStructure>();
+	protected List<CompleteElementType> Sons=new ArrayList<CompleteElementType>();
 	
-	protected CompleteStructure Father;
+	protected CompleteElementType Father;
 	
 	private Long Clavilenoid;
 	
@@ -31,21 +31,21 @@ public class CompleteStructure implements Serializable{
 	
 	protected ArrayList<CompleteOperationalValueType> Shows;
 	
-	protected CompleteStructure BFather;
+	protected CompleteElementType BFather;
 	
-	protected CompleteStructure BSon;
+	protected CompleteElementType BSon;
 	
 	protected boolean Browseable;
 
 	protected boolean Multivalued;
 	
-	private CompleteStructure ClassOfIterator;
+	private CompleteElementType ClassOfIterator;
 	
 	/**
 	 * Consctructor por defecto
 	 */
-	public CompleteStructure() {
-		Sons=new ArrayList<CompleteStructure>();	
+	public CompleteElementType() {
+		Sons=new ArrayList<CompleteElementType>();	
 		Father=null;
 		Clavilenoid=null;
 		Name="~unknow";
@@ -60,10 +60,10 @@ public class CompleteStructure implements Serializable{
 	 * Constructor con parametros
 	 * @param father padre del objeto
 	 */
-	public CompleteStructure(String name,CompleteGrammar ColeccionPadre) {
+	public CompleteElementType(String name,CompleteGrammar ColeccionPadre) {
 		super();
 		Father = null;
-		Sons=new ArrayList<CompleteStructure>();	
+		Sons=new ArrayList<CompleteElementType>();	
 		collectionFather=ColeccionPadre;
 		Clavilenoid=null;
 		Name=name;
@@ -78,10 +78,10 @@ public class CompleteStructure implements Serializable{
 	 * Constructor con parametros
 	 * @param father padre del objeto
 	 */
-	public CompleteStructure(String name,CompleteStructure father,CompleteGrammar ColeccionPadre) {
+	public CompleteElementType(String name,CompleteElementType father,CompleteGrammar ColeccionPadre) {
 		super();
 		Father = father;
-		Sons=new ArrayList<CompleteStructure>();	
+		Sons=new ArrayList<CompleteElementType>();	
 		collectionFather=ColeccionPadre;
 		Clavilenoid=null;
 		Name=name;
@@ -96,10 +96,10 @@ public class CompleteStructure implements Serializable{
 	 * Constructor con parametros
 	 * @param father padre del objeto
 	 */
-	public CompleteStructure(Long Claviqueno,String name,CompleteGrammar ColeccionPadre) {
+	public CompleteElementType(Long Claviqueno,String name,CompleteGrammar ColeccionPadre) {
 		super();
 		Father = null;
-		Sons=new ArrayList<CompleteStructure>();	
+		Sons=new ArrayList<CompleteElementType>();	
 		collectionFather=ColeccionPadre;
 		Clavilenoid=Claviqueno;
 		Name=name;
@@ -114,10 +114,10 @@ public class CompleteStructure implements Serializable{
 	 * Constructor con parametros
 	 * @param father padre del objeto
 	 */
-	public CompleteStructure(Long Claviqueno,String name,CompleteStructure father,CompleteGrammar ColeccionPadre) {
+	public CompleteElementType(Long Claviqueno,String name,CompleteElementType father,CompleteGrammar ColeccionPadre) {
 		super();
 		Father = father;
-		Sons=new ArrayList<CompleteStructure>();	
+		Sons=new ArrayList<CompleteElementType>();	
 		collectionFather=ColeccionPadre;
 		Clavilenoid=Claviqueno;
 		Name=name;
@@ -141,7 +141,7 @@ public class CompleteStructure implements Serializable{
 	/**
 	 * @return the father
 	 */
-	public CompleteStructure getFather() {
+	public CompleteElementType getFather() {
 		return Father;
 	}
 
@@ -150,7 +150,7 @@ public class CompleteStructure implements Serializable{
 	/**
 	 * @param father the father to set
 	 */
-	public void setFather(CompleteStructure father) {
+	public void setFather(CompleteElementType father) {
 		Father = father;
 	}
 
@@ -159,14 +159,14 @@ public class CompleteStructure implements Serializable{
 	/**
 	 * @return the sons
 	 */
-	public List<CompleteStructure> getSons() {
+	public List<CompleteElementType> getSons() {
 		return Sons;
 	}
 
 	/**
 	 * @param sons the sons to set
 	 */
-	public void setSons(List<CompleteStructure> sons) {
+	public void setSons(List<CompleteElementType> sons) {
 		Sons = sons;
 	}
 
@@ -208,7 +208,7 @@ public class CompleteStructure implements Serializable{
 	/**
 	 * @return the bFather
 	 */
-	public CompleteStructure getBFather() {
+	public CompleteElementType getBFather() {
 		return BFather;
 	}
 
@@ -216,7 +216,7 @@ public class CompleteStructure implements Serializable{
 	/**
 	 * @param bFather the bFather to set
 	 */
-	public void setBFather(CompleteStructure bFather) {
+	public void setBFather(CompleteElementType bFather) {
 		BFather = bFather;
 	}
 
@@ -224,7 +224,7 @@ public class CompleteStructure implements Serializable{
 	/**
 	 * @return the bSon
 	 */
-	public CompleteStructure getBSon() {
+	public CompleteElementType getBSon() {
 		return BSon;
 	}
 
@@ -232,7 +232,7 @@ public class CompleteStructure implements Serializable{
 	/**
 	 * @param bSon the bSon to set
 	 */
-	public void setBSon(CompleteStructure bSon) {
+	public void setBSon(CompleteElementType bSon) {
 		BSon = bSon;
 	}
 
@@ -301,11 +301,11 @@ public class CompleteStructure implements Serializable{
 	}
 
 
-	public CompleteStructure getClassOfIterator() {
+	public CompleteElementType getClassOfIterator() {
 		return ClassOfIterator;
 	}
 	
-	public void setClassOfIterator(CompleteStructure classOfIterator) {
+	public void setClassOfIterator(CompleteElementType classOfIterator) {
 		ClassOfIterator = classOfIterator;
 	}
 

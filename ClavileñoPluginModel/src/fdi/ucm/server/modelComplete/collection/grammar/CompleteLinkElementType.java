@@ -6,7 +6,7 @@ package fdi.ucm.server.modelComplete.collection.grammar;
  * @author Joaquin Gayoso
  *
  */
-public class CompleteLinkElementType extends CompleteStructure{
+public class CompleteLinkElementType extends CompleteElementType{
 
 	private static final long serialVersionUID = 1L;
 	
@@ -30,7 +30,7 @@ public class CompleteLinkElementType extends CompleteStructure{
 	 * @param father
 	 * @param summary
 	 */
-	public CompleteLinkElementType(String name, CompleteStructure father, CompleteGrammar GramaticaPadre) {
+	public CompleteLinkElementType(String name, CompleteElementType father, CompleteGrammar GramaticaPadre) {
 		super(name,father,GramaticaPadre);
 	}
 	
@@ -48,7 +48,7 @@ public class CompleteLinkElementType extends CompleteStructure{
 	 * @param father
 	 * @param summary
 	 */
-	public CompleteLinkElementType(Long claviqueno,String name, CompleteStructure father, CompleteGrammar GramaticaPadre) {
+	public CompleteLinkElementType(Long claviqueno,String name, CompleteElementType father, CompleteGrammar GramaticaPadre) {
 		super(claviqueno,name,father,GramaticaPadre);
 	}
 	

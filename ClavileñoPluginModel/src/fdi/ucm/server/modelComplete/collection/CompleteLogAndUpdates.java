@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import fdi.ucm.server.modelComplete.collection.document.CompleteDocuments;
 import fdi.ucm.server.modelComplete.collection.document.CompleteElement;
 import fdi.ucm.server.modelComplete.collection.grammar.CompleteGrammar;
-import fdi.ucm.server.modelComplete.collection.grammar.CompleteStructure;
+import fdi.ucm.server.modelComplete.collection.grammar.CompleteElementType;
 
 public class CompleteLogAndUpdates implements Serializable{
 
@@ -20,7 +20,7 @@ public class CompleteLogAndUpdates implements Serializable{
 	private ArrayList<CompleteElement> NuevosOperationalValueElement;
 	private ArrayList<CompleteDocuments> NuevosOperationalValueDocument;
 	private ArrayList<CompleteGrammar> NuevosOperationalViewGrammar;
-	private ArrayList<CompleteStructure> NuevosOperationalViewStructure;
+	private ArrayList<CompleteElementType> NuevosOperationalViewStructure;
 	
 	public CompleteLogAndUpdates() {
 		LogLines=new ArrayList<String>();
@@ -28,7 +28,7 @@ public class CompleteLogAndUpdates implements Serializable{
 		NuevosOperationalValueElement=new ArrayList<CompleteElement>();
 		NuevosOperationalValueDocument=new ArrayList<CompleteDocuments>();
 		NuevosOperationalViewGrammar=new ArrayList<CompleteGrammar>();
-		NuevosOperationalViewStructure=new ArrayList<CompleteStructure>();
+		NuevosOperationalViewStructure=new ArrayList<CompleteElementType>();
 	}
 	
 
@@ -45,7 +45,7 @@ public class CompleteLogAndUpdates implements Serializable{
 			ArrayList<CompleteElement> nuevosOperationalValueElement,
 			ArrayList<CompleteDocuments> nuevosOperationalValueDocument,
 			ArrayList<CompleteGrammar> nuevosOperationalViewGrammar,
-			ArrayList<CompleteStructure> nuevosOperationalViewStructure) {
+			ArrayList<CompleteElementType> nuevosOperationalViewStructure) {
 		super();
 		LogLines = logLines;
 		NuevosElementos = nuevosElementos;
@@ -131,7 +131,7 @@ public class CompleteLogAndUpdates implements Serializable{
 	/**
 	 * @return the nuevosOperationalViewStructure
 	 */
-	public ArrayList<CompleteStructure> getNuevosOperationalViewStructure() {
+	public ArrayList<CompleteElementType> getNuevosOperationalViewStructure() {
 		return NuevosOperationalViewStructure;
 	}
 
@@ -139,7 +139,7 @@ public class CompleteLogAndUpdates implements Serializable{
 	 * @param nuevosOperationalViewStructure the nuevosOperationalViewStructure to set
 	 */
 	public void setNuevosOperationalViewStructure(
-			ArrayList<CompleteStructure> nuevosOperationalViewStructure) {
+			ArrayList<CompleteElementType> nuevosOperationalViewStructure) {
 		NuevosOperationalViewStructure = nuevosOperationalViewStructure;
 	}
 	
