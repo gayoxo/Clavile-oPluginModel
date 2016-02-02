@@ -3,7 +3,6 @@
  */
 package fdi.ucm.server.modelComplete;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import fdi.ucm.server.modelComplete.collection.CompleteCollection;
@@ -19,7 +18,7 @@ import fdi.ucm.server.modelComplete.collection.grammar.CompleteOperationalValueT
  * @author Joaquin Gayoso-Cabada
  *
  */
-public interface TransformCollection {
+public interface TransformFunctionsCollection {
 	
 	
 	//Generales 
@@ -57,9 +56,6 @@ public interface TransformCollection {
 	public List<CompleteOperationalValueType> findOperationalTypebyElementType(Long ElementTypeId, String view, String name, String Value ); //null para comodin en view,name y value
 	public List<CompleteOperationalValue> findOperationalTypebyElement(Long ElementId, String view, String name, String Value ); //null para comodin en view,name y value
 	
-	//Final Salvado
-	
-	public ArrayList<String> StoreCollection(CompleteCollection storeCollection, Long OldCollectionId,String Description, String IconPath );
 
 	
 	

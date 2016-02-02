@@ -5,7 +5,7 @@ package fdi.ucm.server.modelComplete;
  * @author Joaquin Gayoso-Cabada
  *
  */
-public class CompleteImportRuntimeException extends RuntimeException {
+public class CompleteTransformRuntimeException extends RuntimeException {
 
 	//1 Error de creacion por falta de Meta Objeto virtual.
 	//2 Descripcion no encontrada en la entrada al objeto virtual.
@@ -21,7 +21,7 @@ public class CompleteImportRuntimeException extends RuntimeException {
 	private String GENERIC_ERROR;
 	
 	
-	public CompleteImportRuntimeException() {
+	public CompleteTransformRuntimeException() {
 		super(GENERIC_ERROR_STATIC);
 		GENERIC_ERROR=GENERIC_ERROR_STATIC;
 	}
@@ -30,7 +30,7 @@ public class CompleteImportRuntimeException extends RuntimeException {
 	 * Construtor por defecto
 	 * @param i tipo de error
 	 */
-	public CompleteImportRuntimeException(String i) {
+	public CompleteTransformRuntimeException(String i) {
 		
 		GENERIC_ERROR=i;
 		
