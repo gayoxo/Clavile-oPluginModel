@@ -1,7 +1,7 @@
 package fdi.ucm.server.modelComplete;
 
 /**
- * Excepciones de Clavy
+ * Excepciones de Oda
  * @author Joaquin Gayoso-Cabada
  *
  */

@@ -3,6 +3,7 @@ package fdi.ucm.server.modelComplete.collection.document;
 import java.io.Serializable;
 import java.util.ArrayList;
 
+
 import fdi.ucm.server.modelComplete.collection.grammar.CompleteElementType;
 
 
@@ -21,12 +22,14 @@ public class CompleteElement implements Serializable {
 	private Long Clavilenoid;
 	private static final long serialVersionUID = 1L;
 	protected CompleteElementType hastype;
+	protected ArrayList<Integer> Ambitos;
 	protected ArrayList<CompleteOperationalValue> Shows;  
 	
 	/**
 	 * Constructor por defecto.
 	 */
 	public CompleteElement() {
+		Ambitos=new ArrayList<Integer>();
 		Shows=new ArrayList<CompleteOperationalValue>();
 		Clavilenoid=null;
 	}
@@ -37,6 +40,7 @@ public class CompleteElement implements Serializable {
 	 */
 	public CompleteElement(CompleteElementType hastype) {
 		this.hastype = hastype;
+		Ambitos=new ArrayList<Integer>();
 		Shows=new ArrayList<CompleteOperationalValue>();
 		Clavilenoid=null;
 	}
@@ -47,6 +51,7 @@ public class CompleteElement implements Serializable {
 	 */
 	public CompleteElement(Long clavilenoId,CompleteElementType hastype) {
 		this.hastype = hastype;
+		Ambitos=new ArrayList<Integer>();
 		Shows=new ArrayList<CompleteOperationalValue>();
 		Clavilenoid=clavilenoId;
 	}
@@ -64,6 +69,20 @@ public class CompleteElement implements Serializable {
 	 */
 	public void setHastype(CompleteElementType hastype) {
 		this.hastype = hastype;
+	}
+
+	/**
+	 * @return the ambitos
+	 */
+	public ArrayList<Integer> getAmbitos() {
+		return Ambitos;
+	}
+
+	/**
+	 * @param ambitos the ambitos to set
+	 */
+	public void setAmbitos(ArrayList<Integer> ambitos) {
+		Ambitos = ambitos;
 	}
 
 

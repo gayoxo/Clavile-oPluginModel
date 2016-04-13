@@ -24,8 +24,8 @@ public class CompleteTextElementType extends CompleteElementType {
 	 * @param name
 	 * @param father
 	 */
-	public CompleteTextElementType(Long claviqueno,String name,CompleteElementType father, CompleteGrammar GramaticaPadre) {
-		super(claviqueno,name,father,GramaticaPadre);
+	public CompleteTextElementType(Long claviqueno,String name,CompleteStructure father) {
+		super(claviqueno,name,father);
 	}
 
 	/**
@@ -40,8 +40,8 @@ public class CompleteTextElementType extends CompleteElementType {
 	 * @param name
 	 * @param father
 	 */
-	public CompleteTextElementType(String name,CompleteElementType father, CompleteGrammar GramaticaPadre) {
-		super(name,father,GramaticaPadre);
+	public CompleteTextElementType(String name,CompleteStructure father) {
+		super(name,father);
 	}
 
 	/**

@@ -21,8 +21,8 @@ public class CompleteResourceElementType extends CompleteElementType{
 	 * @param father
 	 * @param summary
 	 */
-	public CompleteResourceElementType(String name, CompleteElementType father, CompleteGrammar GramaticaPadre) {
-		super(name,father,GramaticaPadre);
+	public CompleteResourceElementType(String name, CompleteStructure father) {
+		super(name,father);
 	}
 	
 	/**
@@ -39,8 +39,8 @@ public class CompleteResourceElementType extends CompleteElementType{
 	 * @param father
 	 * @param summary
 	 */
-	public CompleteResourceElementType(Long claviqueno,String name, CompleteElementType father, CompleteGrammar GramaticaPadre) {
-		super(claviqueno,name,father,GramaticaPadre);
+	public CompleteResourceElementType(Long claviqueno,String name, CompleteStructure father) {
+		super(claviqueno,name,father);
 	}
 	
 	/**

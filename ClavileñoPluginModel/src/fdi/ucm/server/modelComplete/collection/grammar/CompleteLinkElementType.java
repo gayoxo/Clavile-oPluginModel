@@ -30,8 +30,8 @@ public class CompleteLinkElementType extends CompleteElementType{
 	 * @param father
 	 * @param summary
 	 */
-	public CompleteLinkElementType(String name, CompleteElementType father, CompleteGrammar GramaticaPadre) {
-		super(name,father,GramaticaPadre);
+	public CompleteLinkElementType(String name, CompleteStructure father) {
+		super(name,father);
 	}
 	
 	/**
@@ -48,8 +48,8 @@ public class CompleteLinkElementType extends CompleteElementType{
 	 * @param father
 	 * @param summary
 	 */
-	public CompleteLinkElementType(Long claviqueno,String name, CompleteElementType father, CompleteGrammar GramaticaPadre) {
-		super(claviqueno,name,father,GramaticaPadre);
+	public CompleteLinkElementType(Long claviqueno,String name, CompleteStructure father) {
+		super(claviqueno,name,father);
 	}
 	
 

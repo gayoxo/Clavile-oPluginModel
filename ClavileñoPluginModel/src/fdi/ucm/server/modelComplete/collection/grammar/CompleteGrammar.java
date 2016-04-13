@@ -19,7 +19,7 @@ public class CompleteGrammar implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1669968409568391810L;
-	private ArrayList<CompleteElementType> Sons;
+	private ArrayList<CompleteStructure> Sons;
 	private String Nombre;
 	private String Description;
 	private ArrayList<CompleteOperationalValueType> Views;
@@ -28,7 +28,7 @@ public class CompleteGrammar implements Serializable{
 	
 	
 	public CompleteGrammar() {
-		Sons=new ArrayList<CompleteElementType>();
+		Sons=new ArrayList<CompleteStructure>();
 		Nombre=null;
 		Description=null;
 		Views=new ArrayList<CompleteOperationalValueType>();
@@ -44,7 +44,7 @@ public class CompleteGrammar implements Serializable{
 		super();
 		Nombre = nombre;
 		Description = description;
-		Sons=new ArrayList<CompleteElementType>();
+		Sons=new ArrayList<CompleteStructure>();
 		Views=new ArrayList<CompleteOperationalValueType>();
 		Coleccion=coleccion;
 		Clavilenoid=null;
@@ -58,7 +58,7 @@ public class CompleteGrammar implements Serializable{
 		super();
 		Nombre = nombre;
 		Description = description;
-		Sons=new ArrayList<CompleteElementType>();
+		Sons=new ArrayList<CompleteStructure>();
 		Views=new ArrayList<CompleteOperationalValueType>();
 		Coleccion=coleccion;
 		Clavilenoid=claviqueno;
@@ -67,7 +67,7 @@ public class CompleteGrammar implements Serializable{
 	/**
 	 * @return the sons
 	 */
-	public ArrayList<CompleteElementType> getSons() {
+	public ArrayList<CompleteStructure> getSons() {
 		return Sons;
 	}
 
@@ -75,7 +75,7 @@ public class CompleteGrammar implements Serializable{
 	/**
 	 * @param sons the sons to set
 	 */
-	public void setSons(ArrayList<CompleteElementType> sons) {
+	public void setSons(ArrayList<CompleteStructure> sons) {
 		Sons = sons;
 	}
 
