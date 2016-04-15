@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import fdi.ucm.server.modelComplete.collection.CompleteCollection;
+import fdi.ucm.server.modelComplete.collection.grammar.CompleteGrammar;
 
 /**
  * Clase que diseña las construciones basicas .
@@ -16,6 +17,7 @@ public class CompleteDocuments implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private Long Clavilenoid;
 	private CompleteCollection collectionFather;
+	private CompleteGrammar CompleteGrammar;
 	protected List<CompleteElement> Description;
 	private ArrayList<CompleteOperationalValue> ViewsValues;
 	private String DescriptionText;
@@ -43,9 +45,11 @@ public class CompleteDocuments implements Serializable{
 	 */
 	public CompleteDocuments(
 			CompleteCollection collectionFather,
+			fdi.ucm.server.modelComplete.collection.grammar.CompleteGrammar completeGrammar,
 			String descriptionText, String icon) {
 		super();
 		this.collectionFather = collectionFather;
+		CompleteGrammar = completeGrammar;
 		DescriptionText = descriptionText;
 		Icon = icon;
 		Description=new ArrayList<CompleteElement>();
@@ -62,9 +66,11 @@ public class CompleteDocuments implements Serializable{
 	 */
 	public CompleteDocuments(Long clavilenoId,
 			CompleteCollection collectionFather,
+			fdi.ucm.server.modelComplete.collection.grammar.CompleteGrammar completeGrammar,
 			String descriptionText, String icon) {
 		super();
 		this.collectionFather = collectionFather;
+		CompleteGrammar = completeGrammar;
 		DescriptionText = descriptionText;
 		Icon = icon;
 		Description=new ArrayList<CompleteElement>();
@@ -87,6 +93,21 @@ public class CompleteDocuments implements Serializable{
 
 
 
+	/**
+	 * @return the document
+	 */
+	public CompleteGrammar getDocument() {
+		return CompleteGrammar;
+	}
+
+
+
+	/**
+	 * @param document the document to set
+	 */
+	public void setDocument(CompleteGrammar document) {
+		CompleteGrammar = document;
+	}
 
 	/**
 	 * @return the description

@@ -13,7 +13,7 @@ public class CompleteElementType extends CompleteStructure implements Serializab
 
 	private static final long serialVersionUID = 5151085195953705390L;
 	protected String Name;
-	protected ArrayList<CompleteOperationalValueType> Shows;  
+	protected ArrayList<CompleteOperationalView> Shows;  
 
 	
 	
@@ -24,7 +24,7 @@ public class CompleteElementType extends CompleteStructure implements Serializab
 		super();
 	Father=null;
 	Name="unknown";
-	Shows=new ArrayList<CompleteOperationalValueType>();
+	Shows=new ArrayList<CompleteOperationalView>();
 	
 	}
 
@@ -39,7 +39,7 @@ public class CompleteElementType extends CompleteStructure implements Serializab
 		public CompleteElementType(String name,CompleteGrammar GramaticaPadre) {
 			super(null,GramaticaPadre);
 			Name = name;
-			Shows=new ArrayList<CompleteOperationalValueType>();
+			Shows=new ArrayList<CompleteOperationalView>();
 		}
 		
 		/** @param father Padre del attibuto.
@@ -49,7 +49,7 @@ public class CompleteElementType extends CompleteStructure implements Serializab
 			public CompleteElementType(String name, CompleteStructure father) {
 				super(father,null);
 				Name = name;
-				Shows=new ArrayList<CompleteOperationalValueType>();
+				Shows=new ArrayList<CompleteOperationalView>();
 			}
 	
 	
@@ -61,7 +61,7 @@ public class CompleteElementType extends CompleteStructure implements Serializab
 		public CompleteElementType(Long Claviqueno,String name,CompleteGrammar GramaticaPadre) {
 			super(Claviqueno,null,GramaticaPadre);
 			Name = name;
-			Shows=new ArrayList<CompleteOperationalValueType>();
+			Shows=new ArrayList<CompleteOperationalView>();
 		}
 		
 		/** @param father Padre del attibuto.
@@ -71,7 +71,7 @@ public class CompleteElementType extends CompleteStructure implements Serializab
 			public CompleteElementType(Long Claviqueno,String name, CompleteStructure father) {
 				super(Claviqueno,father,null);
 				Name = name;
-				Shows=new ArrayList<CompleteOperationalValueType>();
+				Shows=new ArrayList<CompleteOperationalView>();
 			}
 	
 	
@@ -95,7 +95,7 @@ public class CompleteElementType extends CompleteStructure implements Serializab
 	/**
 	 * @return the shows
 	 */
-	public ArrayList<CompleteOperationalValueType> getShows() {
+	public ArrayList<CompleteOperationalView> getShows() {
 		return Shows;
 	}
 
@@ -105,7 +105,7 @@ public class CompleteElementType extends CompleteStructure implements Serializab
 	/**
 	 * @param shows the shows to set
 	 */
-	public void setShows(ArrayList<CompleteOperationalValueType> shows) {
+	public void setShows(ArrayList<CompleteOperationalView> shows) {
 		Shows = shows;
 	}
 
