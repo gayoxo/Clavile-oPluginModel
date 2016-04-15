@@ -5,6 +5,7 @@ package fdi.ucm.server.modelComplete;
 
 import java.util.ArrayList;
 
+import fdi.ucm.server.modelComplete.collection.CompleteCollection;
 import fdi.ucm.server.modelComplete.collection.CompleteCollectionAndLog;
 
 /**
@@ -55,5 +56,23 @@ public abstract class LoadCollection{
 	 * @return si debe clonarse
 	 */
 	public abstract boolean getCloneLocalFiles(); 
+	
+	/**
+	 * Retorna si es necesario el uso de una complete collection anterior para la evaluacion
+	 * @return
+	 */
+	public boolean needComplete()
+	{
+		return false;
+	}
+	
+	/**
+	 * Inserta la coleccion antigua por si es necesaria para el proeceso de carga
+	 * @param pre
+	 */
+	public void setcompleteCollectionPre(CompleteCollection pre)
+	{
+		
+	}
 	
 }
