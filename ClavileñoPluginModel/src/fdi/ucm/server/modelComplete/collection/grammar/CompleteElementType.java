@@ -39,6 +39,10 @@ public class CompleteElementType implements Serializable{
 
 	protected boolean Multivalued;
 	
+	protected boolean Selectable;
+	
+	protected boolean beFilter;
+	
 	private CompleteElementType ClassOfIterator;
 	
 	/**
@@ -53,6 +57,8 @@ public class CompleteElementType implements Serializable{
 		Browseable=false;
 		Multivalued=false;
 		ClassOfIterator=null;
+		Selectable=false;
+		beFilter=false;
 	}
 	
 	
@@ -71,6 +77,8 @@ public class CompleteElementType implements Serializable{
 		Browseable=false;
 		Multivalued=false;
 		ClassOfIterator=null;
+		Selectable=false;
+		beFilter=false;
 	}
 	
 	
@@ -89,6 +97,8 @@ public class CompleteElementType implements Serializable{
 		Browseable=false;
 		Multivalued=false;
 		ClassOfIterator=null;
+		Selectable=false;
+		beFilter=false;
 	}
 
 
@@ -107,6 +117,8 @@ public class CompleteElementType implements Serializable{
 		Browseable=false;
 		Multivalued=false;
 		ClassOfIterator=null;
+		Selectable=false;
+		beFilter=false;
 	}
 	
 	
@@ -125,6 +137,8 @@ public class CompleteElementType implements Serializable{
 		Browseable=false;
 		Multivalued=false;
 		ClassOfIterator=null;
+		Selectable=false;
+		beFilter=false;
 	}
 
 	/**
@@ -307,6 +321,26 @@ public class CompleteElementType implements Serializable{
 	
 	public void setClassOfIterator(CompleteElementType classOfIterator) {
 		ClassOfIterator = classOfIterator;
+	}
+
+
+	public boolean isSelectable() {
+		return Selectable;
+	}
+
+
+	public void setSelectable(boolean selectable) {
+		Selectable = selectable;
+	}
+
+
+	public boolean isBeFilter() {
+		return beFilter;
+	}
+
+
+	public void setBeFilter(boolean beFilter) {
+		this.beFilter = beFilter;
 	}
 
 	
