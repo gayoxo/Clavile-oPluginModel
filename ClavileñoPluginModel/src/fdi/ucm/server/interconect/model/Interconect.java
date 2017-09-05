@@ -19,6 +19,8 @@ public class Interconect implements Serializable {
 	private String Name;
 	private List<Parameter> Parametros;
 	private String Icon;
+	private String URLEdicion;
+	private String URLVisual;
 	
 	
 	public Interconect() {
@@ -28,11 +30,20 @@ public class Interconect implements Serializable {
 	}
 
 
-	public Interconect(String name, String icon) {
+
+
+
+	public Interconect(String name, String icon, String uRLEdicion, String uRLVisual) {
 		super();
 		Name = name;
 		Icon = icon;
+		URLEdicion = uRLEdicion;
+		URLVisual = uRLVisual;
+		Parametros=new ArrayList<>();
 	}
+
+
+
 
 
 	public String getName() {
@@ -62,6 +73,38 @@ public class Interconect implements Serializable {
 
 	public void setIcon(String icon) {
 		Icon = icon;
+	}
+
+
+
+
+
+	public String getURLEdicion() {
+		return URLEdicion;
+	}
+
+
+
+
+
+	public void setURLEdicion(String uRLEdicion) {
+		URLEdicion = uRLEdicion;
+	}
+
+
+
+
+
+	public String getURLVisual() {
+		return URLVisual;
+	}
+
+
+
+
+
+	public void setURLVisual(String uRLVisual) {
+		URLVisual = uRLVisual;
 	}
 	
 	
