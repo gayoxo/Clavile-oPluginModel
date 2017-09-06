@@ -16,6 +16,13 @@ public class Interconect implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	public static final String EDITOR = "editor";
+	
+	//NECESARIAS EN LOS ENVIOS PARA PODER EDITAR
+	public static final String POSTURL="posturl";
+	public static final String PASSID = "passid";
+	public static final String PROTOCOL = "protocol";
+	
+	
 	private String Name;
 	private List<Parameter> Parametros;
 	private String Icon;
