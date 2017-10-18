@@ -29,7 +29,7 @@ public class Interconect implements Serializable {
 	public static final String POSITION = "position";
 	public static final String DOCUMENTID = "documentpartid";
 	public static final String EDITORNAME = "editorname";
-	
+	public static final String NOINFO = "noinfo";
 	
 	
 	private String Name;
