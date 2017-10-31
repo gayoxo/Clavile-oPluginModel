@@ -22,8 +22,6 @@ public class DocumentCompleteJSON implements Serializable{
 	private DocumentsJSON Documento;
 	
 	private ArrayList<GrammarCompleteJSON> Gramaticas;
-	
-	private ArrayList<DocumentElementJSON> Elementos;
 
 	public DocumentCompleteJSON() {
 
@@ -35,12 +33,11 @@ public class DocumentCompleteJSON implements Serializable{
 	 * @param elementos
 	 * @param structura
 	 */
-	public DocumentCompleteJSON(DocumentsJSON documento, ArrayList<GrammarCompleteJSON> gramaticas,
-			ArrayList<DocumentElementJSON> elementos) {
+	public DocumentCompleteJSON(DocumentsJSON documento, ArrayList<GrammarCompleteJSON> gramaticas) {
 		super();
 		Documento = documento;
 		Gramaticas = gramaticas;
-		Elementos = elementos;
+
 	}
 
 	/**
@@ -73,21 +70,7 @@ public class DocumentCompleteJSON implements Serializable{
 
 
 
-	/**
-	 * @return the elementos
-	 */
-	public ArrayList<DocumentElementJSON> getElementos() {
-		return Elementos;
-	}
 
-
-
-	/**
-	 * @param elementos the elementos to set
-	 */
-	public void setElementos(ArrayList<DocumentElementJSON> elementos) {
-		Elementos = elementos;
-	}
 
 	
 	

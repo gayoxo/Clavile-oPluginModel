@@ -22,8 +22,8 @@ public class ResourceElementTypeJSON extends StructureJSON{
 	 * @param father
 	 * @param summary
 	 */
-	public ResourceElementTypeJSON(String name, ArrayList<Long> id,boolean multivalued,boolean browseable,boolean filtro, Long ClaseOf) {
-		super(name,id,multivalued,browseable,false,filtro,ClaseOf);
+	public ResourceElementTypeJSON(String name, ArrayList<Long> id,boolean multivalued,boolean browseable,boolean filtro, Long ClaseOf,String Value,ArrayList<OperationalValueJSON> OperationalValues) {
+		super(name,id,multivalued,browseable,false,filtro,ClaseOf,Value,OperationalValues);
 	}
 	
 	

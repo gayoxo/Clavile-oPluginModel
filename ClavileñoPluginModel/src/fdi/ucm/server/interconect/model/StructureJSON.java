@@ -35,6 +35,10 @@ public class StructureJSON implements Serializable{
 	protected boolean Filtro;
 	
 	protected Long ClaseOf;
+	
+	protected String Value;
+	
+	private ArrayList<OperationalValueJSON> OperationalValues;  
 
 	/**
 	 * Consctructor por defecto
@@ -49,6 +53,8 @@ public class StructureJSON implements Serializable{
 		ClaseOf=0l;
 		Selected=false;
 		Filtro=false;
+		Value="";
+		OperationalValues=new ArrayList<OperationalValueJSON>();
 	}
 	
 	
@@ -57,7 +63,7 @@ public class StructureJSON implements Serializable{
 	 * @param name Nombre del atributo.
 	 * @param browseable Define si es navegable
 	 */
-		public StructureJSON(String name,ArrayList<Long> id,boolean multivalued,boolean browseable,boolean Selected,boolean filtro, Long ClaseOf) {
+		public StructureJSON(String name,ArrayList<Long> id,boolean multivalued,boolean browseable,boolean Selected,boolean filtro, Long ClaseOf,String Value,ArrayList<OperationalValueJSON> OperationalValues) {
 			super();
 			Sons=new ArrayList<StructureJSON>();	
 			this.Id=id;
@@ -68,6 +74,8 @@ public class StructureJSON implements Serializable{
 			this.ClaseOf=ClaseOf;
 			this.Selected=Selected;
 			this.Filtro=filtro;
+			this.Value=Value;
+			this.OperationalValues=OperationalValues;
 		}
 
 
@@ -199,6 +207,22 @@ public boolean isFiltro() {
 
 public void setFiltro(boolean filtro) {
 	Filtro = filtro;
+}
+
+public String getValue() {
+	return Value;
+}
+
+public void setValue(String value) {
+	Value = value;
+}
+
+public ArrayList<OperationalValueJSON> getOperationalValues() {
+	return OperationalValues;
+}
+
+public void setOperationalValues(ArrayList<OperationalValueJSON> operationalValues) {
+	OperationalValues = operationalValues;
 }
 
 

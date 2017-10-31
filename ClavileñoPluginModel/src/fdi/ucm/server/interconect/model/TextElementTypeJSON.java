@@ -27,8 +27,8 @@ public class TextElementTypeJSON extends StructureJSON {
 	 * @param name
 	 * @param father
 	 */
-	public TextElementTypeJSON(String name,ArrayList<Long> id,boolean multivalued,boolean browseable,boolean filtro, Long ClaseOf) {
-		super(name,id,multivalued,browseable,false,filtro,ClaseOf);
+	public TextElementTypeJSON(String name,ArrayList<Long> id,boolean multivalued,boolean browseable,boolean filtro, Long ClaseOf,String Value,ArrayList<OperationalValueJSON> OperationalValues) {
+		super(name,id,multivalued,browseable,false,filtro,ClaseOf,Value,OperationalValues);
 	}
 
 	

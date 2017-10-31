@@ -23,7 +23,6 @@ public class GrammarJSON implements Serializable{
 	private String Description;
 	private Long Coleccion;
 	private List<OperationalValueTypeJSON> Operational;	
-	private List<Long> Structure;	
 	
 	public GrammarJSON() {
 
@@ -42,14 +41,13 @@ public class GrammarJSON implements Serializable{
 	 */
 	public GrammarJSON(Long id, String name, String description,
 			Long coleccion, 
-			List<OperationalValueTypeJSON> operational, List<Long> structure) {
+			List<OperationalValueTypeJSON> operational) {
 		super();
 		Id = id;
 		Name = name;
 		Description = description;
 		Coleccion = coleccion;
 		Operational = operational;
-		Structure = structure;
 	}
 
 
@@ -126,20 +124,7 @@ public class GrammarJSON implements Serializable{
 
 
 
-	/**
-	 * @return the structure
-	 */
-	public List<Long> getStructure() {
-		return Structure;
-	}
 
-
-	/**
-	 * @param structure the structure to set
-	 */
-	public void setStructure(List<Long> structure) {
-		Structure = structure;
-	}
 
 
 
