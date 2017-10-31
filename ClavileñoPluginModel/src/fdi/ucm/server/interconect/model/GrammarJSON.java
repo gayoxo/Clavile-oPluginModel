@@ -4,53 +4,67 @@
 package fdi.ucm.server.interconect.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 
 /**
+ * Clase que genera el serializable para una gramatica con su estructura
  * @author Joaquin Gayoso-Cabada
  *
  */
-public class GrammarJSON implements Serializable{
+public class GrammarJSON implements  Serializable {
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
-
+	private static final long serialVersionUID = -7127361258801014570L;
+	private List<StructureJSON> ListaS;
+	
 	private Long Id;
 	private String Name;
 	private String Description;
 	private Long Coleccion;
 	private List<OperationalValueTypeJSON> Operational;	
 	
+	
 	public GrammarJSON() {
 
+		ListaS=new ArrayList<StructureJSON>();
 	}
 
-
 	/**
-	 * @param id
-	 * @param name
-	 * @param description
-	 * @param coleccion
-	 * @param documents
-	 * @param position
-	 * @param operational
-	 * @param structure
+	 * @param g
+	 * @param listaS
 	 */
 	public GrammarJSON(Long id, String name, String description,
 			Long coleccion, 
-			List<OperationalValueTypeJSON> operational) {
+			List<OperationalValueTypeJSON> operational, List<StructureJSON> listaS) {
 		super();
 		Id = id;
 		Name = name;
 		Description = description;
 		Coleccion = coleccion;
 		Operational = operational;
+		ListaS = listaS;
 	}
 
 
+
+	/**
+	 * @return the listaS
+	 */
+	public List<StructureJSON> getListaS() {
+		return ListaS;
+	}
+
+	/**
+	 * @param listaS the listaS to set
+	 */
+	public void setListaS(List<StructureJSON> listaS) {
+		ListaS = listaS;
+	}
+	
 	/**
 	 * @return the operational
 	 */
@@ -123,11 +137,5 @@ public class GrammarJSON implements Serializable{
 	}
 
 
-
-
-
-
-
-	
 	
 }
