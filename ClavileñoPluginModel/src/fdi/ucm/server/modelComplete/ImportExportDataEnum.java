@@ -8,4 +8,4 @@ package fdi.ucm.server.modelComplete;
  * @author Joaquin Gayoso-Cabada
  *
  */
-public enum ImportExportDataEnum {Text,EncriptedText,Number,Boolean,File}
+public enum ImportExportDataEnum {Text,EncriptedText,Number,Boolean,File,Documents,Document}
